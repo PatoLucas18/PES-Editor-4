@@ -14,8 +14,8 @@ Module option_file
         Else : of_file = File.ReadAllBytes(Decrypt_file)
         End If
 
-        convert_data()
         checksums()
+        convert_data()
         IO.File.WriteAllBytes(file_location, of_file)
     End Sub
     Public Sub convert_data()
